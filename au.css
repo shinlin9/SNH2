@@ -1,0 +1,325 @@
+ody{
+    background-color:white;
+    font-family: 'Pacifico', cursive;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color:deepskyblue;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    z-index:1;
+}
+
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 15px;
+    margin-left: 30px;
+    line-height:70px;
+}
+
+nav ul li a{
+    font-size:25px ;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.logo{
+    color:#000000;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-left: 30px;
+}
+.logo span{
+    font-size: 35px;
+    color: #945339;}
+
+.checkbtn{
+    float: right;
+    color: antiquewhite;
+    font-size: 40px;
+    line-height: 65px;
+    margin-right: 30px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media screen and (max-width:992px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        left: -100%;
+        top: 40px;
+        width: 100%;
+        height: 100vh;
+        background-color:green ;
+        text-align: center;
+        padding: 0;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 30px;
+    }
+    #check:checked~ul{
+        left:0;
+    }
+    a:hover{
+        color: #945339;
+    }
+}
+
+.dropdown li {
+    color: rgb(0, 0, 0);
+    border: none;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+   
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#E7D8C9;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left:29px;
+}
+  
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color:#cfc1b2;}
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropdownli {background-color:#cfc1b2 ;}
+
+section img{
+    width:1200px;
+    height:700px;
+    margin-top:70px;
+    height:calc(100vh- 80px);
+    margin-left:50px;
+}
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  h1{
+  text-align:center;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    color:black;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  footer {
+    width: 100%;
+    background-color:deepskyblue;
+  }
+  .main-content {
+    display: flex;
+  }
+  
+  .main-content .box {
+    flex-basis: 50%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .box h2 {
+    font-size: 1.125;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  
+  .box .content::before {
+    position: absolute;
+    content: "";
+    /*  border: 2px solid red;*/
+    /*  Show them the file*/
+    top: -10px;
+    height: 4px;
+    width: 100%;
+  }
+  
+  .box .content::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 20%;
+    background: #f12020;
+    top: -10px;
+  }
+  .left .content .social {
+    margin: 20px 0 0 0;
+  }
+  
+  .left .content .social a {
+    padding: 0 2px;
+  }
+  .left .content .social a span {
+    height: 40px;
+    width: 40px;
+    background-color:white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .left .content .social a span:hover {
+    background: #f12020;
+  }
+  
+  .center .content .fas {
+    font-size: 1.4375rem;
+    background-color:white;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .center .content .fas:hover {
+    background-color: #f12020;
+  }
+  
+  /*Now we grab the text*/
+  
+  .center .content .text {
+    font-size: 1.07rem;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  
+  .center .content .phone {
+    margin: 8px 0;
+  }
+  
+  .right form .text {
+    font-size: 1.07rem;
+    margin-bottom: 2px;
+    color: black;
+  }
+  
+  .right form .msg {
+    margin-top: 10px;
+  }
+  
+  .right form input,
+  .right form textarea {
+    width: 100%;
+    font-size: 1.07rem;
+    background-color: white;
+    padding-left: 10px;
+    border: 1px solid white;
+  }
+  
+  .right form input:focus,
+  .right form textarea:focus {
+    outline-color: #3498db;
+  }
+  
+  .right form input {
+    height: 35px;
+  }
+  
+  .right form .btn {
+    margin-top: 10px;
+  }
+  
+  .right form .btn button {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #f12020;
+    font-size: 1.07rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .right form .btn button:hover {
+    background-color: #000;
+  }
+  
+  .bottom center {
+    padding: 5px;
+    font-size: 0.94rem;
+    background-color: white;
+  }
+  
+  .bottom center span {
+    color: #656565;
+  }
+  
+  .bottom center a {
+    color: #f12020;
+    text-decoration: none;
+  }
+  
+  .bottom center a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 900px) {
+    footer {
+      position: relative;
+      bottom: 0px;
+    }
+  
+    .main-content {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    .main-content .box {
+      margin: 5px 0;
+    }
+  }
+  
